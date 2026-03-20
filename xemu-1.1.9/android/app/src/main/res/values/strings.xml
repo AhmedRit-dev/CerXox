@@ -1,0 +1,185 @@
+<resources>
+  <string name="app_name">X1 BOX</string>
+  <string name="setup_title">Welcome to X1 BOX</string>
+  <string name="setup_subtitle">Locate your original Xbox files.</string>
+  <string name="setup_not_set">Not set</string>
+  <string name="setup_back">Back</string>
+  <string name="setup_next">Next</string>
+  <string name="setup_finish">Finish</string>
+
+  <string name="setup_mcpx_title">MCPX Boot ROM</string>
+  <string name="setup_mcpx_body">Choose the MCPX boot ROM file for your console.</string>
+  <string name="setup_pick_mcpx">Choose MCPX ROM</string>
+  <string name="setup_mcpx_value">MCPX ROM: %1$s</string>
+
+  <string name="setup_flash_title">Flash ROM (BIOS)</string>
+  <string name="setup_flash_body">Choose the flash ROM / BIOS image.</string>
+  <string name="setup_pick_flash">Choose Flash ROM</string>
+  <string name="setup_flash_value">Flash ROM: %1$s</string>
+
+  <string name="setup_hdd_title">Hard Disk</string>
+  <string name="setup_hdd_body">Choose your Xbox hard disk image.</string>
+  <string name="setup_pick_hdd">Choose Hard Disk</string>
+  <string name="setup_hdd_value">Hard Disk: %1$s</string>
+
+  <string name="setup_disc_title">Games Folder</string>
+  <string name="setup_disc_body">Pick your games folder using SAF. X1 BOX will scan it for playable images.</string>
+  <string name="setup_pick_disc">Choose Games Folder</string>
+  <string name="setup_disc_value">Games Folder: %1$s</string>
+
+  <string name="library_title">Game Library</string>
+  <string name="library_change_folder">Change Folder</string>
+  <string name="library_snapshots">Snapshots</string>
+  <string name="library_convert_iso">Convert ISO to XISO</string>
+  <string name="library_view_list">List</string>
+  <string name="library_view_cover_grid">Cover Grid</string>
+  <string name="library_box_art_lookup">Look up box art online</string>
+  <string name="library_folder_value">Folder: %1$s</string>
+  <string name="library_no_folder">No folder selected</string>
+  <string name="library_loading_games">Scanning games...</string>
+  <string name="library_converting_game">Converting %1$s...</string>
+  <string name="library_empty_games">No supported games found in this folder.</string>
+  <string name="library_convert_pick_title">Select ISO to convert</string>
+  <string name="library_convert_none">No .iso files found to convert.</string>
+  <string name="library_convert_confirm_title">Convert ISO</string>
+  <string name="library_convert_confirm_message">Create %1$s in the same folder?</string>
+  <string name="library_convert_overwrite_title">Replace existing file?</string>
+  <string name="library_convert_overwrite_message">%1$s already exists. Replace it?</string>
+  <string name="library_convert_action">Convert</string>
+  <string name="library_convert_busy">A conversion is already in progress.</string>
+  <string name="library_convert_unavailable">ISO converter native library is unavailable in this build.</string>
+  <string name="library_convert_success">Created %1$s</string>
+  <string name="library_convert_failed">Conversion failed: %1$s</string>
+  <string name="library_convert_write_permission">Games folder is read-only. Re-select it to grant write access.</string>
+  <string name="library_convert_create_output_failed">Failed to create output file in games folder.</string>
+  <string name="library_convert_copy_input_failed">Failed to copy ISO into converter workspace.</string>
+  <string name="library_convert_copy_output_failed">Failed to copy converted XISO back to games folder.</string>
+  <string name="library_convert_resolve_failed">Could not resolve destination folder for selected game.</string>
+  <string name="library_restart_failed">Unable to restart. The selected game is no longer accessible.</string>
+  <string name="library_game_size">Size: %1$s</string>
+  <string name="library_game_path">Path: %1$s</string>
+  <string name="library_open_game">Open</string>
+  <string name="library_about_button_desc">About X1 BOX</string>
+  <string name="library_about_title">About X1 BOX</string>
+  <string name="library_about_message">X1 BOX is a community project based on xemu. Select a link below:</string>
+  <string name="library_about_open_failed">Unable to open link.</string>
+  <string name="library_about_link_source">Source Code (X1 BOX)</string>
+  <string name="library_about_link_privacy">Privacy Policy</string>
+  <string name="library_about_link_fork">Forked From (xemu)</string>
+  <string name="library_about_link_license">License (LICENSE)</string>
+  <string name="library_about_link_disclaimer">License Disclaimer (COPYING)</string>
+  <string name="library_about_url_source" translatable="false">https://github.com/izzy2lost/xemu</string>
+  <string name="library_about_url_privacy" translatable="false">https://www.izzy2lost.com/x1box-privacy</string>
+  <string name="library_about_url_fork" translatable="false">https://github.com/xemu-project/xemu</string>
+  <string name="library_about_url_license" translatable="false">https://github.com/izzy2lost/xemu/blob/master/LICENSE</string>
+  <string name="library_about_url_disclaimer" translatable="false">https://github.com/izzy2lost/xemu/blob/master/COPYING</string>
+
+  <string name="library_settings">Settings</string>
+
+  <string name="settings_title">Settings</string>
+  <string name="settings_save">Save</string>
+  <string name="settings_redo_setup_wizard">Redo Setup Wizard</string>
+
+  <string name="settings_section_display">Display</string>
+  <string name="settings_graphics_api">Graphics API</string>
+  <string name="settings_graphics_api_vulkan">Vulkan</string>
+  <string name="settings_graphics_api_opengl">OpenGL ES</string>
+  <string name="settings_filtering">Display Filtering</string>
+  <string name="settings_filtering_linear">Linear</string>
+  <string name="settings_filtering_nearest">Nearest</string>
+  <string name="settings_vsync">VSync</string>
+  <string name="frontend_launch_setup_required">Finish core setup before launching from a frontend.</string>
+  <string name="frontend_launch_unresolved">Could not access that game from the frontend intent. Pick the same folder in x1box first, or use a content URI.</string>
+  <string name="settings_section_vulkan_driver">Custom Vulkan Driver</string>
+  <string name="settings_vulkan_driver_none">System Default</string>
+  <string name="settings_vulkan_driver_browse">Browse…</string>
+  <string name="settings_vulkan_driver_clear">Clear</string>
+  <string name="settings_vulkan_driver_hint">For Adreno GPUs with Turnip/Mesa. Restart required.</string>
+  <string name="settings_display_mode">Aspect Ratio</string>
+  <string name="settings_display_mode_stretch">Stretch</string>
+  <string name="settings_display_mode_4_3">4:3</string>
+  <string name="settings_display_mode_16_9">16:9</string>
+  <string name="settings_frame_rate_limit">Frame Rate Limit</string>
+  <string name="settings_frame_rate_limit_30">30 FPS</string>
+  <string name="settings_frame_rate_limit_60">60 FPS</string>
+  <string name="settings_system_memory">System Memory</string>
+  <string name="settings_system_memory_64">64 MiB (Default)</string>
+  <string name="settings_system_memory_128">128 MiB (Debug/Homebrew)</string>
+  <string name="settings_system_memory_hint">Use 64 MiB for retail games. 128 MiB is mainly for debug/homebrew and may reduce compatibility.</string>
+  <string name="settings_resolution_scale">Internal Resolution Scale</string>
+  <string name="settings_resolution_scale_1x">1x (Native 480p)</string>
+  <string name="settings_resolution_scale_2x">2x (960p)</string>
+  <string name="settings_resolution_scale_3x">3x (1440p)</string>
+
+  <string name="settings_section_performance">Performance</string>
+  <string name="settings_tcg_thread">CPU Threading Mode</string>
+  <string name="settings_tcg_thread_multi">Multi-thread</string>
+  <string name="settings_tcg_thread_single">Single-thread</string>
+  <string name="settings_hard_fpu">Hardware FPU</string>
+  <string name="settings_cache_shaders">Shader Cache</string>
+  <string name="settings_skip_boot_anim">Skip startup animation</string>
+
+  <string name="settings_section_audio">Audio</string>
+  <string name="settings_use_dsp">Real-time DSP Processing</string>
+  <string name="settings_hrtf">HRTF (3D Audio)</string>
+  <string name="settings_audio_driver">Audio Backend</string>
+  <string name="settings_audio_driver_opensles">OpenSL ES</string>
+  <string name="settings_audio_driver_aaudio">AAudio</string>
+  <string name="settings_audio_driver_disabled">Disabled</string>
+  <string name="settings_section_eeprom">EEPROM</string>
+  <string name="settings_eeprom_language">EEPROM Language</string>
+  <string name="settings_eeprom_language_english">English</string>
+  <string name="settings_eeprom_language_japanese">Japanese</string>
+  <string name="settings_eeprom_language_german">German</string>
+  <string name="settings_eeprom_language_french">French</string>
+  <string name="settings_eeprom_language_spanish">Spanish</string>
+  <string name="settings_eeprom_language_italian">Italian</string>
+  <string name="settings_eeprom_language_korean">Korean</string>
+  <string name="settings_eeprom_language_chinese">Chinese</string>
+  <string name="settings_eeprom_language_portuguese">Portuguese</string>
+  <string name="settings_eeprom_video_standard">EEPROM Video Standard</string>
+  <string name="settings_eeprom_video_standard_ntsc_m">NTSC-M</string>
+  <string name="settings_eeprom_video_standard_ntsc_j">NTSC-J</string>
+  <string name="settings_eeprom_video_standard_pal_i">PAL-I</string>
+  <string name="settings_eeprom_video_standard_pal_m">PAL-M</string>
+  <string name="settings_eeprom_status_ready">EEPROM file: %1$s</string>
+  <string name="settings_eeprom_status_missing">EEPROM not found at %1$s. Launch a game once to create it.</string>
+  <string name="settings_eeprom_status_invalid">EEPROM is invalid at %1$s.</string>
+  <string name="settings_eeprom_status_error">Failed to read EEPROM at %1$s.</string>
+  <string name="settings_eeprom_status_unknown">EEPROM file: %1$s (contains unknown values; saving will normalize them)</string>
+  <string name="settings_eeprom_hint">Updates language and video standard in eeprom.bin. Restart emulation after saving.</string>
+
+  <string name="settings_saved">Settings saved</string>
+  <string name="settings_saved_with_eeprom">Settings and EEPROM saved</string>
+  <string name="settings_saved_eeprom_missing">Settings saved. Launch a game once, then edit EEPROM.</string>
+  <string name="settings_saved_eeprom_failed">Settings saved, but EEPROM update failed</string>
+
+  <string name="in_game_menu_title">Game Menu</string>
+  <string name="in_game_menu_resume">Resume</string>
+  <string name="in_game_menu_restart_game">Restart Game</string>
+  <string name="in_game_menu_show_touch_controls">Show Touch Controls</string>
+  <string name="in_game_menu_hide_touch_controls">Hide Touch Controls</string>
+  <string name="in_game_menu_exit_to_library">Exit to Game Library</string>
+  <string name="in_game_menu_quit_app">Quit App</string>
+  <string name="in_game_menu_save_state">Save State</string>
+  <string name="in_game_menu_load_state">Load State</string>
+  <string name="snapshot_slot_label">Slot %1$d</string>
+  <string name="snapshot_saved">State saved to Slot %1$d</string>
+  <string name="snapshot_save_failed">Save failed</string>
+  <string name="snapshot_loaded">State loaded from Slot %1$d</string>
+  <string name="snapshot_load_failed">No save found in Slot %1$d</string>
+  <string name="snapshot_select_save_slot">Select slot to save</string>
+  <string name="snapshot_select_load_slot">Select slot to load</string>
+  <string name="snapshot_empty_slot">Empty slot</string>
+  <string name="snapshot_unknown_game">Unknown game</string>
+  <string name="snapshot_preview_tap_hint">Tap thumbnail to enlarge</string>
+  <string name="snapshot_preview_unavailable">No screenshot yet</string>
+  <string name="snapshot_preview_title">Slot %1$d - %2$s</string>
+  <string name="snapshot_thumbnail_desc">Snapshot thumbnail</string>
+
+  <string name="library_custom_cover_set_option">Set Custom Cover</string>
+  <string name="library_custom_cover_remove_option">Remove Custom Cover</string>
+  <string name="library_custom_cover_set">Custom cover saved</string>
+  <string name="library_custom_cover_removed">Custom cover removed</string>
+  <string name="library_custom_cover_failed">Failed to save custom cover</string>
+</resources>

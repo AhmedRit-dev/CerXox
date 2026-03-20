@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/setup_wizard_background">
+
+  <androidx.core.widget.NestedScrollView
+    android:id="@+id/library_scroll"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:padding="24dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:orientation="vertical">
+
+      <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/xemu_surface"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="8dp"
+        app:strokeColor="@color/xemu_outline_variant"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="24dp">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="@string/library_title"
+              android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium" />
+
+            <ImageButton
+              android:id="@+id/btn_library_about"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:background="?attr/selectableItemBackgroundBorderless"
+              android:contentDescription="@string/library_about_button_desc"
+              android:padding="6dp"
+              android:src="@android:drawable/ic_dialog_info"
+              android:tint="@color/xemu_green" />
+          </LinearLayout>
+
+          <TextView
+            android:id="@+id/library_folder_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/setup_wizard_path_background"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/library_no_folder"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/xemu_text_muted" />
+
+          <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_change_games_folder"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/library_change_folder"
+            app:icon="@android:drawable/ic_menu_set_as"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp" />
+
+          <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_settings"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/library_settings"
+            app:icon="@android:drawable/ic_menu_preferences"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp" />
+
+          <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_snapshots"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/library_snapshots"
+            app:icon="@android:drawable/ic_menu_recent_history"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp" />
+
+          <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_convert_iso"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/library_convert_iso"
+            app:icon="@android:drawable/ic_menu_upload"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp" />
+
+          <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/library_view_mode_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+              android:id="@+id/btn_view_list"
+              style="?attr/materialButtonOutlinedStyle"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="@string/library_view_list"
+              app:icon="@android:drawable/ic_menu_agenda"
+              app:iconGravity="textStart"
+              app:iconPadding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+              android:id="@+id/btn_view_grid"
+              style="?attr/materialButtonOutlinedStyle"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="@string/library_view_cover_grid"
+              app:icon="@android:drawable/ic_dialog_dialer"
+              app:iconGravity="textStart"
+              app:iconPadding="8dp" />
+          </com.google.android.material.button.MaterialButtonToggleGroup>
+
+          <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch_box_art_lookup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/library_box_art_lookup"
+            android:textColor="@color/xemu_text_muted" />
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ProgressBar
+              android:id="@+id/library_loading"
+              style="?android:attr/progressBarStyleSmall"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:indeterminateTint="@color/xemu_green"
+              android:visibility="gone" />
+
+            <TextView
+              android:id="@+id/library_loading_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="10dp"
+              android:text="@string/library_loading_games"
+              android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+              android:textColor="@color/xemu_text_muted"
+              android:visibility="gone" />
+          </LinearLayout>
+
+          <TextView
+            android:id="@+id/library_empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/setup_wizard_path_background"
+            android:text="@string/library_empty_games"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/xemu_text_muted"
+            android:visibility="gone" />
+
+          <LinearLayout
+            android:id="@+id/library_games_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" />
+
+          <LinearLayout
+            android:id="@+id/library_games_grid_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+        </LinearLayout>
+      </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
